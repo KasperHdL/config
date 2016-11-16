@@ -1,0 +1,23 @@
+{
+    "border": "none",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1111,
+       "width": 1930,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Discord-canary",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Discord$",
+        "instance": "^discord-canary$",
+        "title": "^Discord$",
+        "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+

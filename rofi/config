@@ -1,0 +1,15 @@
+rofi.opacity: 90
+rofi.width: 1000
+rofi.lines: 20
+rofi.columns: 2
+rofi.font: monospace 10
+rofi.fixed-num-lines: false
+rofi.sidebar-mode: false
+rofi.terminal: terminology
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
+
+rofi.color-enabled: true
+rofi.color-window: #222222, #000000, #d70a53
+rofi.color-normal: #181818, #d70a53, #262626, #d70a53, #ffffff
+rofi.color-active: #333333, #888888, #333333, #d0527f, #ffffff
+rofi.color-urgent: #222222, #ff1844, #222222, #394249, #ff1844

@@ -1,0 +1,16 @@
+*
+*/
+!README.md
+!.gitignore
+!.git/
+!i3/
+!i3status/
+!dunst/
+!keyboard_layout/
+!vim/
+!rofi/
+!fehbg
+!bg
+!install.sh
+!compton.conf
+!conky.conf
