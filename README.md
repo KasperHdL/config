@@ -5,8 +5,8 @@ for most stuff but not vim
   * i3-lock-fancy
   * rofi
   * i3status
+  * tint2
   
-  * dunst[not used anymore, but instead standard openbox]
 
   
 * keyboardlayout
