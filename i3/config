@@ -199,8 +199,10 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     #status_command $HOME/.config/i3/conky-i3bar
+    #status_command i3status
+    status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
+
     position top
-status_command i3status
     colors {
         separator #666666
         background #222222
@@ -213,9 +215,9 @@ status_command i3status
 }
 
 
-#assign [class="(?i)Discord"] 9
+assign [class="(?i)Discord*"] 9
 #Does not work...
-assign [class="(?i)Spotify"] 8
+assign [class="(?i)Spotify*"] 8
 
 #gnome stuff 
 bindsym Mod4+l exec i3lock-fancy
@@ -224,8 +226,9 @@ exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-sound-applet
 exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id ~/.config/i3/load_layout.sh
+exec --no-startup-id ~/.config/i3/layout/load_layout.sh
 exec --no-startup-id compton -b --config ~/.config/compton.conf
+exec --no-startup-id dropboxd
 
 
 set $audio-sink-select Audio Sink (a) analog (u) usb-headset (c) combined
