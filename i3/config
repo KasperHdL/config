@@ -216,8 +216,8 @@ bar {
 
 
 assign [class="(?i)Discord*"] 9
-#Does not work...
-assign [class="(?i)Spotify*"] 8
+for_window [class="(?i)Spotify"] move to workspace 8
+
 
 #gnome stuff 
 bindsym Mod4+l exec i3lock-fancy
