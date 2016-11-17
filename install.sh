@@ -25,7 +25,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 yaourt -S xclip
 
 #install i3 and deps
-yaourt -S i3-gaps i3status
+yaourt -S i3-gaps i3blocks-gaps-git
 
 #git config
 git clone https://github.com/KasperHdL/config
