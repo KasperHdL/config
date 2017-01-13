@@ -214,6 +214,7 @@ bar {
     }
 }
 
+exec --no-startup-id export TERM=xterm-256color
 
 assign [class="(?i)Discord*"] 9
 for_window [class="(?i)Spotify"] move to workspace 8
@@ -223,10 +224,7 @@ for_window [class="(?i)Spotify"] move to workspace 8
 bindsym Mod4+l exec i3lock-fancy
 
 exec --no-startup-id sh ~/.fehbg
-exec --no-startup-id nm-applet
-exec --no-startup-id gnome-sound-applet
-exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id ~/.config/i3/layout/load_layout.sh
+#exec --no-startup-id ~/.config/i3/layout/load_layout.sh
 exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id dropboxd
 
