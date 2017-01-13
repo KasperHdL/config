@@ -214,8 +214,6 @@ bar {
     }
 }
 
-exec --no-startup-id export TERM=xterm-256color
-
 assign [class="(?i)Discord*"] 9
 for_window [class="(?i)Spotify"] move to workspace 8
 
