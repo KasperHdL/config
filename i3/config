@@ -214,11 +214,20 @@ bar {
     }
 }
 
+#Startup programs
+assign [class="(?i)Vivaldi*"] 1
+exec vivaldi-stable
+
 assign [class="(?i)Discord*"] 9
+exec discord-canary
+
+assign [class="(?i)ThunderBird*"] 10
+exec thunderbird
+
+#assign [class="(?i)Spotify*"] 8
 for_window [class="(?i)Spotify"] move to workspace 8
 
 
-#gnome stuff 
 bindsym Mod4+l exec i3lock-fancy
 
 exec --no-startup-id sh ~/.fehbg
@@ -227,6 +236,7 @@ exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id dropboxd
 
 
+#Audio Select
 set $audio-sink-select Audio Sink (a) analog (u) usb-headset (c) combined
 mode "$audio-sink-select"{
         bindsym a exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo, mode "default"
@@ -255,7 +265,7 @@ bindsym $mod+Right exec playerctl next
 bindsym $mod+Down  exec playerctl stop
 bindsym $mod+Up    exec playerctl play-pause
 
-# Sreen brightness controls
+# Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
