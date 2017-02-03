@@ -10,6 +10,6 @@ echo ""
 echo "Commiting"
 git commit -m "$1"
 echo ""
-echo "Pusing lalalal"
+echo "Pusing"
 git push origin
 
