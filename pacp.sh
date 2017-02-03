@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Pushing"
+echo "Pulling"
 git pull
 echo ""
 echo "Adding"
