@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 alias open="xdg-open"
 alias vi="vim"
 alias c="cmatrix -s -u 5"
-alias kit="~/.config/kit.sh"
+alias pacp="~/.config/pacp.sh"
 
 
 ## Added by Master Password
