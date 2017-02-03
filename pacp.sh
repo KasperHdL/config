@@ -3,10 +3,13 @@ set -e
 
 echo "Pushing"
 git pull
-echo "\nAdding"
+echo ""
+echo "Adding"
 git add --all
-echo "\nCommiting"
+echo ""
+echo "Commiting"
 git commit -m "$1"
-echo "\nPusing"
+echo ""
+echo "Pusing"
 git push origin
 
