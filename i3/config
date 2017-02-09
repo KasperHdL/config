@@ -218,20 +218,22 @@ bar {
 assign [class="(?i)Vivaldi*"] 1
 exec vivaldi-stable
 
+assign [class="(?i)Spotify*"] 7 #does not work...
+for_window [class="(?i)Spotify"] move to workspace 7
+
+assign [class="(?i)Slack*"] 8
+exec slack
+
 assign [class="(?i)Discord*"] 9
 exec discord-canary
 
 assign [class="(?i)ThunderBird*"] 10
 exec thunderbird
 
-#assign [class="(?i)Spotify*"] 8
-for_window [class="(?i)Spotify"] move to workspace 8
-
-
 bindsym Mod4+l exec i3lock-fancy
 
 exec --no-startup-id sh ~/.fehbg
-#exec --no-startup-id ~/.config/i3/layout/load_layout.sh
+
 exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id dropboxd
 
