@@ -233,6 +233,7 @@ exec thunderbird
 bindsym Mod4+l exec i3lock-fancy
 
 exec --no-startup-id sh ~/.fehbg
+exec --no-startup-id xmodmap ~/.config/keyboard_layout/Xmodmap
 
 exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id dropboxd
