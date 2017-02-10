@@ -8,3 +8,8 @@ first backup /usr/share/X11/xkb/symbols/us
 
 symlink the file with the provided one (and if not already selected, select English (US) as default keyboard layout)
 NOTE: symlink seems to create issues, so copy the file if symlink creates issues
+
+#Xmodmap
+Added a xmodmap that maps Caps Lock to Escape THEIR IS NO CAPS LOCK THEN!
+put this in xinitrc or another boot script
+xmodmap [path-to-file]
