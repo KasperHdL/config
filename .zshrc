@@ -87,6 +87,7 @@ alias open="xdg-open"
 alias vi="vim"
 alias c="cmatrix -s -u 5"
 alias pacp="~/.config/pacp.sh"
+alias sl="sl -a"
 
 
 ## Added by Master Password

@@ -182,10 +182,10 @@ mode "resize" {
 
 set $external_display External Screen (m) MIRROR HDMI, (h) HDMI to left, (l) HDMI to right, (x) HDMI OFF
 mode "$external_display" {
-        bindsym h exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1, mode "default"
-        bindsym l exec --no-startup-id xrandr --output HDMI1 --auto --right-of eDP1, mode "default"
-        bindsym m exec --no-startup-id xrandr --output HDMI1 --auto --same-as eDP1, mode "default"
-        bindsym x exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
+        bindsym h exec --no-startup-id xrandr --output HDMI-1 --auto --left-of eDP-1, mode "default"
+        bindsym l exec --no-startup-id xrandr --output HDMI-1 --auto --right-of eDP-1, mode "default"
+        bindsym m exec --no-startup-id xrandr --output HDMI-1 --auto --same-as eDP-1, mode "default"
+        bindsym x exec --no-startup-id xrandr --output HDMI-1 --auto --off, mode "default"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
