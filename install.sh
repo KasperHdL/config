@@ -20,18 +20,22 @@ echo "completed installing yaourt"
 echo "installing xclip"
 yaourt -S xclip --noconfirm
 
-echo "installing i3"
 #install i3 and deps
-yaourt -S i3-gaps i3blocks-gaps-git --noconfirm
+echo "installing i3"
+yaourt -S i3-gaps i3blocks-gaps-git i3lock-fancy-git rofi feh compton playerctl --noconfirm
 
 echo "cloning config files"
 #git config
-git clone https://github.com/KasperHdL/config
-mv config/* .config/
-rm -rf config
+git clone https://github.com/KasperHdL/.config
 
-echo "installing vim"
+#move config files
+mkdir temp
+mv temp/.config/* .config/
+mv temp/.config/.* .config/
+rm -rf temp
+
 #install vim
+echo "installing vim"
 yaourt -S vim --noconfirm
 
 echo "cloning vim config"
@@ -41,34 +45,39 @@ mv vim .vim
 ln -s .vim/vimrc .vimrc
 
 echo "initing vim submodules"
-cd .vim
+cd .vim/bundle
 git submodule update --init -recursive
-cd bundle/YouCompleteMe
+cd YouCompleteMe
 ./install.py --all
 
 echo "Finished Installing Vim"
 cd
 
-echo "installing gitkraken spotify playerctl"
-yaourt -S gitkraken spotify playerctl --noconfirm
 
-
-echo "installing vivaldi"
+echo "installing various programs"
 yaourt -S vivaldi
+yaourt -S gitkraken
+yaourt -S spotify
+yaourt -S thunderbird
+yaourt -S discord-canary
+yaourt -S slack-desktop
+yaourt -S dropbox
+
 #install unity
 echo "installing unity"
 yaourt -S unity-editor
 
-
-
-
 echo "installing zsh"
-#Zsh
+#zsh
 yaourt -S zsh --noconfirm
-chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo "--------------"
-echo "--------------"
-echo "Zsh needs to be set as standard for your user! and Zshrc needs to point to the correct ohmyzsh(unless username is kaholi)! run: chsh -s /bin/zsh"
+rm .zshrc
+ln -s .config/.zshrc .zshrc
+ln -s .oh-my-zsh/themes/spaceship.zsh-theme .config spaceship.zsh-theme
 
+echo "--------------"
+echo "--------------"
+echo "Zshrc needs to point to the correct ohmyzsh(unless username is kaholi) look at .zshrc"
+
+echo "Run chsh -s /bin/zsh"
