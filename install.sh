@@ -17,44 +17,58 @@ cd ..
 rm -rf yaourt package-query
 echo "completed installing yaourt"
 
-#Zsh
-yaourt -S zsh
-chsh -s /bin/zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "installing xclip"
+yaourt -S xclip --noconfirm
 
-yaourt -S xclip
-
+echo "installing i3"
 #install i3 and deps
-yaourt -S i3-gaps i3blocks-gaps-git
+yaourt -S i3-gaps i3blocks-gaps-git --noconfirm
 
+echo "cloning config files"
 #git config
 git clone https://github.com/KasperHdL/config
 mv config/* .config/
 rm -rf config
 
-#install unity
-yaourt -S unity-editor
-
+echo "installing vim"
 #install vim
-yaourt -S vim
+yaourt -S vim --noconfirm
 
+echo "cloning vim config"
 #git vim config and init vim submodules
 git clone https://github.com/KasperHdL/vim
 mv vim .vim
 ln -s .vim/vimrc .vimrc
 
+echo "initing vim submodules"
 cd .vim
 git submodule update --init -recursive
 cd bundle/YouCompleteMe
-./install.py --clang-completer --omnisharp-completer
+./install.py --all
 
 echo "Finished Installing Vim"
 cd
 
-yaourt -S brave
-yaourt -S gitkraken
-yaourt -S spotify
-yaourt -S playerctl
+echo "installing gitkraken spotify playerctl"
+yaourt -S gitkraken spotify playerctl --noconfirm
 
 
+echo "installing vivaldi"
+yaourt -S vivaldi
+#install unity
+echo "installing unity"
+yaourt -S unity-editor
+
+
+
+
+echo "installing zsh"
+#Zsh
+yaourt -S zsh --noconfirm
+chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "--------------"
+echo "--------------"
 echo "Zsh needs to be set as standard for your user! and Zshrc needs to point to the correct ohmyzsh(unless username is kaholi)! run: chsh -s /bin/zsh"
+
