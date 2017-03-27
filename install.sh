@@ -26,10 +26,11 @@ yaourt -S i3-gaps i3blocks-gaps-git i3lock-fancy-git rofi feh compton playerctl 
 
 echo "cloning config files"
 #git config
+mkdir temp
+cd temp
 git clone https://github.com/KasperHdL/.config
 
 #move config files
-mkdir temp
 mv temp/.config/* .config/
 mv temp/.config/.* .config/
 rm -rf temp
