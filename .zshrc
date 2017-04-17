@@ -6,7 +6,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="zeta"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,7 +87,7 @@ alias open="xdg-open"
 alias vi="vim"
 alias c="cmatrix -s -u 5"
 alias pacp="~/.config/pacp.sh"
-alias lsa="ls -A"
+alias lsa="ls -la"
 alias sl="sl -a"
 alias t="tree"
 
