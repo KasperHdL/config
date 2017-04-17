@@ -1,6 +1,7 @@
 # Zeta theme for oh-my-zsh
 # Tested on Linux, Unix and Windows under ANSI colors.
 # Copyright: Radmon, 2015
+# Modified: @KasperHdL 2017
 
 # Colors: black|red|blue|green|yellow|magenta|cyan|white
 local black=$fg[black]
@@ -98,21 +99,18 @@ function get_space {
 # > command
 function print_prompt_head {
     local left_prompt="\
-%{$blue%}# \
-%{$green_bold%}$(get_usr_name)\
-%{$blue%}@\
-%{$cyan_bold%}$(get_box_name): \
-%{$yellow_bold%}$(get_current_dir)%{$reset_color%}\
+%{$blue_bold%}# \
+%{$yellow%}$(get_current_dir): %{$reset_color%}\
 $(get_git_prompt) "
-    local right_prompt="%{$blue%}($(get_time_stamp))%{$reset_color%} "
+    local right_prompt="%{$green%}$(get_usr_name)%{$magenta%}@%{$yellow%}$(get_box_name) %{$blue%}($(get_time_stamp))%{$reset_color%} "
     print -rP "$left_prompt$(get_space $left_prompt $right_prompt)$right_prompt"
 }
 
 function get_prompt_indicator {
     if [[ $? -eq 0 ]]; then
-        echo "%{$magenta_bold%}$zeta %{$reset_color%}"
-    else
         echo "%{$red_bold%}$zeta %{$reset_color%}"
+    else
+        echo "%{$yellow_bold%}$zeta %{$reset_color%}"
     fi
 }
 
