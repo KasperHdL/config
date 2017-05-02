@@ -228,7 +228,7 @@ assign [class="(?i)Discord*"] 9
 exec discord-canary
 
 assign [class="(?i)Nylas*"] 10
-exec nylas-mai
+exec nylas-mail
 
 bindsym Mod4+l exec i3lock-fancy
 
