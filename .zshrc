@@ -90,6 +90,7 @@ alias pacp="~/.config/pacp.sh"
 alias lsa="ls -la"
 alias sl="sl -a"
 alias t="tree"
+alias files="nautilus ."
 
 
 ## Added by Master Password
