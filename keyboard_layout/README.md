@@ -10,6 +10,6 @@ symlink the file with the provided one (and if not already selected, select Engl
 NOTE: symlink seems to create issues, so copy the file if symlink creates issues
 
 #Xmodmap
-Added a xmodmap that maps Caps Lock to Escape THEIR IS NO CAPS LOCK THEN!
+Added a xmodmap that maps Caps Lock to Escape THERE IS NO CAPS LOCK!
 put this in xinitrc or another boot script
 xmodmap [path-to-file]

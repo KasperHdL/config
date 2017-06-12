@@ -227,8 +227,11 @@ exec slack
 assign [class="(?i)Discord*"] 9
 exec discord-canary
 
-assign [class="(?i)Nylas*"] 10
-exec nylas-mail
+#assign [class="(?i)Nylas*"] 10
+#exec nylas-mail
+
+assign [class="(?i)Thunderbird*"] 10
+exec thunderbird
 
 bindsym Mod4+l exec i3lock-fancy
 
