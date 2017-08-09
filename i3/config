@@ -221,8 +221,8 @@ exec vivaldi-stable
 assign [class="(?i)Spotify*"] 7 #does not work...
 for_window [class="(?i)Spotify"] move to workspace 7
 
-assign [class="(?i)Slack*"] 8
-exec slack
+#assign [class="(?i)Slack*"] 8
+#exec slack
 
 assign [class="(?i)Discord*"] 9
 exec discord-canary
