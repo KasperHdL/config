@@ -58,10 +58,8 @@ bindsym $mod+Shift+t exec --no-startup-id termite --name=_todo_ -e "vim '+set no
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
-bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
-bindsym $mod+Shift+d exec --no-startup-id rofi -show window
 bindsym $mod+Shift+space exec --no-startup-id rofi -show window
 
 
@@ -215,8 +213,8 @@ bar {
 }
 
 #Startup programs
-assign [class="(?i)Vivaldi*"] 1
-exec vivaldi-stable
+assign [class="(?i)Firefox"] 1
+exec firefox
 
 assign [class="(?i)Spotify*"] 7 #does not work...
 for_window [class="(?i)Spotify"] move to workspace 7
@@ -225,7 +223,7 @@ for_window [class="(?i)Spotify"] move to workspace 7
 #exec slack
 
 assign [class="(?i)Discord*"] 9
-exec discord-canary
+exec discord
 
 #assign [class="(?i)Nylas*"] 10
 #exec nylas-mail

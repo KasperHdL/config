@@ -107,7 +107,7 @@ mpw() {
     MP_FULLNAME="Kasper Honnens de Lichtenberg"
 
     # Start Master Password and copy the output.
-    printf %s "$(MP_FULLNAME=$MP_FULLNAME command mpw -t x "$@")" | _copy
+    printf %s "$(command mpw -u $MP_FULLNAME -t x "$@")" | _copy
 }
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
