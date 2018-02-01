@@ -44,17 +44,17 @@ gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec kitty
 
 # toggle touchpad
 bindsym $mod+$alt_r exec --no-startup-id "synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym $mod+Shift+control+q exec "termite --name=_xkill_ -e xkill" 
+bindsym $mod+Shift+control+q exec "kitty --name=_xkill_ xkill" 
 for_window [instance="_xkill_"] floating enable, move absolute position 660 0, resize set 600 60
 
-bindsym $mod+Shift+t exec --no-startup-id termite --name=_todo_ -e "vim '+set nofen' ${HOME}/.todo"
+bindsym $mod+Shift+t exec --no-startup-id kitty --name=_todo_ nvim '+set nofen' ~/.todo
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
