@@ -3,20 +3,32 @@
 !README.md
 !.gitignore
 !.git/
-!i3/
-!i3status/
-!dunst/
-!keyboard_layout/
+
 #!vim/
 !nvim/
+
+# Ricing
+!i3/
+!i3status/
+
+!dunst/
 !rofi/
 !fehbg
 !bg
-!install.sh
 !compton.conf
 !conky.conf
 !tint2/
-!pacp.sh
+
+
+# zshrc
 !.zshrc
 !*.zsh-theme
+
+# Terminal
 !termite/
+!kitty/
+
+# Custom scripts
+!keyboard_layout/
+!install.sh
+!pacp.sh
