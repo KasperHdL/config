@@ -212,6 +212,8 @@ bar {
     }
 }
 
+for_window [class="(?i)Demo"] floating enable
+
 #Startup programs
 assign [class="(?i)Firefox"] 1
 exec firefox

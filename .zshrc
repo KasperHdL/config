@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/kaholi/.oh-my-zsh
-  export TERM=xterm-256color
+#  export TERM=xterm-256color
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,7 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias open="xdg-open"
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 alias c="cmatrix -s -u 5"
 alias pacp="~/.config/pacp.sh"
 alias lsa="ls -la"
