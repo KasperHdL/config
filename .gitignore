@@ -27,6 +27,7 @@
 # Terminal
 !termite/
 !kitty/
+!kitty/*
 
 # Custom scripts
 !keyboard_layout/
