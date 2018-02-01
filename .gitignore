@@ -5,7 +5,7 @@
 !.git/
 
 #!vim/
-!nvim/
+!nvim/*
 
 # Ricing
 !i3/
