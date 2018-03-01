@@ -16,11 +16,13 @@ Plug 'mhartington/oceanic-next'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 
-"Plug 'brooth/far.vim'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'godlygeek/tabular'
+
+Plug 'brooth/far.vim'
 
 "Plug 'neomake/neomake'
 "Plug 'vim-syntastic/syntastic'
@@ -30,7 +32,7 @@ Plug 'godlygeek/tabular'
 
 Plug 'Valloric/YouCompleteMe' , {'do': './install.py --clang-completer --cs-completer'}
 
-"Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 filetype indent on
@@ -67,6 +69,10 @@ set foldnestmax=10      " max 10 depth
 set foldenable          " don't fold files by default on open
 set foldlevelstart=10   " start with fold level of 1
 
+set tabstop=4           " 4 space tab
+set expandtab           " use spaces for tabs
+set softtabstop=4       " 4 space tab
+set shiftwidth=4
 
 "============================
 "=========< Theme >==========
@@ -96,6 +102,16 @@ set signcolumn=yes
 
 let g:bufferline_show_bufnr = 1
 
+let g:airline#extensions#tabline#enabled = 1
+
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cs'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['unity'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['fbx'] = ''
+
+
 
 "============================
 "======< Key Mapping >=======
@@ -117,7 +133,7 @@ nnoremap <Leader>l :bn<cr>
 nnoremap <Leader>h :bp<cr>
 nnoremap <Leader>c :bd<cr>
 
-"Copy & Paste to system clipboard
+" Copy & Paste to system clipboard
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -145,5 +161,4 @@ nnoremap <F7> :NERDTreeToggle<CR>
 
 nnoremap <Leader><Leader>t :Tabularize /
 vnoremap <Leader><Leader>t :Tabularize /
-
 
