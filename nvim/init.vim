@@ -24,6 +24,9 @@ Plug 'godlygeek/tabular'
 
 Plug 'brooth/far.vim'
 
+Plug 'KabbAmine/zeavim.vim'
+Plug 'derekwyatt/vim-fswitch'
+
 "Plug 'neomake/neomake'
 "Plug 'vim-syntastic/syntastic'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -37,6 +40,16 @@ call plug#end()
 
 filetype indent on
 filetype plugin indent on
+
+
+set nobackup
+set nowb
+set noswapfile
+
+"reads the file automatically if it has been changed outside
+set autoread
+"hide buffers
+set hidden
 
 " Ignore case when searching
 set ignorecase
@@ -161,4 +174,47 @@ nnoremap <F7> :NERDTreeToggle<CR>
 
 nnoremap <Leader><Leader>t :Tabularize /
 vnoremap <Leader><Leader>t :Tabularize /
+
+" YCM
+let g:ycm_confirm_extra_conf = 0 
+
+nnoremap <Leader><Leader>g :YcmCompleter GoTo<cr>
+nnoremap <Leader><Leader>f :YcmCompleter FixIt<cr>
+vnoremap <Leader><Leader>f :YcmCompleter FixIt<cr>
+
+":YcmCompleter GetType
+":YcmCompleter GoToDeclaration
+":YcmCompleter GoToDefinition
+
+"FSHERE
+nnoremap <Leader>t :FSHere<cr>
+nnoremap <Leader>y :FSSplitRight<cr>
+
+
+
+" Zeal
+" Steals focus currently... use with <leader> z
+let g:zv_file_types = {
+	\   'cs'                      : 'unity_3d',
+	\   'sh'                      : 'bash',
+	\   'vim'                     : 'vim',
+	\   '.vimrc'                  : 'vim',
+	\   'cmakelist.txt'           : 'cmake',
+	\   'cmake'                   : 'cmake',
+	\   '\v^(c|cpp|h|hpp)$'       : 'c,cpp',
+	\   '\v^(glsl|vs|fs)$'        : 'opengl_4',
+	\   '\v^(md|mdown|mkd|mkdn)$' : 'markdown',
+\ }
+
+""CUSTOM MAKE
+
+function Make(app)
+    execute 'vsplit term://cd $(git rev-parse --show-toplevel) && cd bin && cmake .. && make -j && ./' . a:app
+endfunction
+nnoremap <F5> :call Make("Tool")<cr>
+inoremap <F5> :call Make("Tool")<cr>
+
+
+
+
 
