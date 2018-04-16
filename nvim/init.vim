@@ -27,6 +27,8 @@ Plug 'brooth/far.vim'
 Plug 'KabbAmine/zeavim.vim'
 Plug 'derekwyatt/vim-fswitch'
 
+Plug 'tikhomirov/vim-glsl'
+
 "Plug 'neomake/neomake'
 "Plug 'vim-syntastic/syntastic'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -188,7 +190,7 @@ vnoremap <Leader><Leader>f :YcmCompleter FixIt<cr>
 
 "FSHERE
 nnoremap <Leader>t :FSHere<cr>
-nnoremap <Leader>y :FSSplitRight<cr>
+nnoremap <Leader><S-t> :FSSplitRight<cr>
 
 
 
@@ -206,15 +208,11 @@ let g:zv_file_types = {
 	\   '\v^(md|mdown|mkd|mkdn)$' : 'markdown',
 \ }
 
-""CUSTOM MAKE
 
+""CUSTOM MAKE
 function Make(app)
     execute 'vsplit term://cd $(git rev-parse --show-toplevel) && cd bin && cmake .. && make -j && ./' . a:app
 endfunction
 nnoremap <F5> :call Make("Tool")<cr>
 inoremap <F5> :call Make("Tool")<cr>
-
-
-
-
 

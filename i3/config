@@ -277,8 +277,11 @@ bindsym $mod+Down  exec playerctl stop
 bindsym $mod+Up    exec playerctl play-pause
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/brightness.sh 150 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/brightness.sh -150 # decrease screen brightness
 
 # theme
 client.focused #d70a53 #d70a53 #ffffff #8c0333 
