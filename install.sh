@@ -4,18 +4,12 @@
 #goto home
 cd
 
-#Setup yaourt
-echo "installing yaourt"
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
+#Setup yay
+echo "installing yay"
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
-cd ..
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
-rm -rf yaourt package-query
-echo "completed installing yaourt"
+echo "completed installing yay"
 
 echo "installing xclip"
 yaourt -S xclip --noconfirm
@@ -30,38 +24,20 @@ mkdir temp
 cd temp
 git clone https://github.com/KasperHdL/.config
 
+#Install NeoVim
+
 #move config files
 mv temp/.config/* .config/
 mv temp/.config/.* .config/
 rm -rf temp
 
-#install vim
-echo "installing vim"
-yaourt -S vim --noconfirm
-
-echo "cloning vim config"
-#git vim config and init vim submodules
-git clone https://github.com/KasperHdL/vim
-mv vim .vim
-ln -s .vim/vimrc .vimrc
-
-echo "initing vim submodules"
-cd .vim/bundle
-git submodule update --init -recursive
-cd YouCompleteMe
-./install.py --all
-
-echo "Finished Installing Vim"
 cd
-
-
 echo "installing various programs"
-yaourt -S vivaldi
-yaourt -S gitkraken
+yaourt -S firefox
+yaourt -S smartgit
 yaourt -S spotify
 yaourt -S thunderbird
-yaourt -S discord-canary
-yaourt -S slack-desktop
+yaourt -S discord
 yaourt -S dropbox
 
 #install unity

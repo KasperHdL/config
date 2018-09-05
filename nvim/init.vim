@@ -11,7 +11,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 
 Plug 'airblade/vim-gitgutter'
-Plug 'mhartington/oceanic-next'
+Plug 'mhartington/oceanic-next' "Theme
 
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
@@ -179,6 +179,8 @@ vnoremap <Leader><Leader>t :Tabularize /
 
 " YCM
 let g:ycm_confirm_extra_conf = 0 
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 nnoremap <Leader><Leader>g :YcmCompleter GoTo<cr>
 nnoremap <Leader><Leader>f :YcmCompleter FixIt<cr>
@@ -203,7 +205,8 @@ let g:zv_file_types = {
 	\   '.vimrc'                  : 'vim',
 	\   'cmakelist.txt'           : 'cmake',
 	\   'cmake'                   : 'cmake',
-	\   '\v^(c|cpp|h|hpp)$'       : 'c,cpp',
+	\   '\v^(cpp|hpp)$'           : 'c,cpp',
+	\   '\v^(c|h)$'               : 'c',
 	\   '\v^(glsl|vs|fs)$'        : 'opengl_4',
 	\   '\v^(md|mdown|mkd|mkdn)$' : 'markdown',
 \ }
