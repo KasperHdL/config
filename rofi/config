@@ -6,7 +6,6 @@ rofi.font: monospace 12
 rofi.fixed-num-lines: false
 rofi.sidebar-mode: false
 rofi.terminal: kitty
-rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
 
 rofi.color-enabled: true
 rofi.color-window: #222222, #000000, #d70a53
