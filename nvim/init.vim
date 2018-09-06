@@ -1,7 +1,7 @@
 set termguicolors
 
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'vim-scripts/camelcasemotion'
