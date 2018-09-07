@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias open="xdg-open"
 alias vi="nvim"
-alias c="cmatrix -s -u 5"
+#alias c="cmatrix -s -u 5"
 alias pacp="~/.config/pacp.sh"
 alias cppcmd="~/.config/cppcmd.sh"
 alias ccmd="~/.config/ccmd.sh"
