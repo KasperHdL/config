@@ -1,6 +1,5 @@
 set termguicolors
 
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
@@ -35,7 +34,7 @@ Plug 'tikhomirov/vim-glsl'
 "Plug 'zchee/deoplete-clang'
 "Plug 'cyansprite/deoplete-omnisharp' , {'do': './install.sh'}
 
-Plug 'Valloric/YouCompleteMe' , {'do': './install.py --clang-completer --cs-completer'}
+Plug 'Valloric/YouCompleteMe' , {'do': './install.py --system-libclang --clang-completer --cs-completer'}
 
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
