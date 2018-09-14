@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --randomize --bg-fill '/home/kaholi/.config/bg/Lakeside_SunRise_1920x1080.jpg' '/home/kaholi/.config/bg/awaken_large.png' '/home/kaholi/.config/bg/forest_sunset.jpg' '/home/kaholi/.config/bg/Lakeside_Morning_1920x1080.jpg' '/home/kaholi/.config/bg/landscape2.jpg' '/home/kaholi/.config/bg/sunrise.jpg' 
+feh --no-fehbg --recursive --randomize --bg-fill ~/Pictures/Wallpaper/*

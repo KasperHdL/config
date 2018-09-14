@@ -8,6 +8,10 @@
 !nvim/
 !nvim/*
 
+# Ergodox
+!ergodox/
+!ergodox/*
+
 # Ricing
 !i3/
 !i3status/
@@ -35,3 +39,4 @@
 !pacp.sh
 !cppcmd.sh
 !brightness.sh
+

@@ -1,0 +1,35 @@
+Name = "MDErgo1";
+Variant = "standard";
+Layout = "Default";
+Base = "Blank";
+Version = "0.1";
+Author = "Kasper Honnens de Lichtenberg";
+KLL = "0.3c";
+Date = "2018-09-14";
+Generator = "KIICONF 0.2";
+
+U"EQUALS" : flashMode();
+U"8" : U"/";
+U"9" : '*';
+U"0" : U"-";
+U"MINUS" : flashMode();
+U"U" : U"7";
+U"I" : U"8";
+U"O" : U"9";
+U"P" : '+';
+U"J" : U"4";
+U"K" : U"5";
+U"L" : U"6";
+U"SEMICOLON" : '+';
+U"M" : U"1";
+U"COMMA" : U"2";
+U"PERIOD" : U"3";
+U"SLASH" : U"ENTER";
+U"SPACE" : U"P0";
+U"LEFT" : U"0";
+U"DOWN" : U"0";
+U"UP" : U"PERIOD";
+U"RIGHT" : U"ENTER";
+
+
+

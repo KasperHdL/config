@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/kaholi/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 #  export TERM=xterm-256color
 
 # Set name of the theme to load.
@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias open="xdg-open"
+alias open="nohup xdg-open . &>/dev/null &"
 alias vi="nvim"
 #alias c="cmatrix -s -u 5"
 alias pacp="~/.config/pacp.sh"
@@ -93,7 +93,7 @@ alias brightness="~/.config/brightness.sh"
 alias lsa="ls -la"
 alias sl="sl -a"
 alias t="tree"
-alias files="nautilus ."
+alias files="nohup open . &>/dev/null &"
 
 
 ## Added by Master Password
