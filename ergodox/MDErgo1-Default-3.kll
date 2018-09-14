@@ -8,28 +8,12 @@ KLL = "0.3c";
 Date = "2018-09-14";
 Generator = "KIICONF 0.2";
 
-U"ESC" : U"ESCAPE";
 U"EQUALS" : flashMode();
-U"E" : U"INTER1";
-U"W" : U"ISO/";
-U"Q" : U"HASH";
-U"F" : U"INTER9";
-U"D" : U"INTER8";
-U"S" : U"INTER7";
-U"A" : U"INTER6";
-U"V" : U"LANG9";
-U"C" : U"LANG8";
-U"X" : U"LANG7";
-U"Z" : U"LANG6";
-U"8" : U"SCROLLLOCK";
-U"9" : U"PAUSE";
 U"MINUS" : flashMode();
-U"U" : U"INSERT";
-U"I" : U"HOME";
-U"O" : U"PAGEUP";
-U"J" : U"DELETE";
-U"K" : U"END";
-U"L" : U"PAGEDOWN";
+U"H" : U"LEFT";
+U"J" : U"DOWN";
+U"K" : U"UP";
+U"L" : U"RIGHT";
 
 
 

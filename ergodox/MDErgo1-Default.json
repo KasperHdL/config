@@ -22,16 +22,12 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "LCK3",
-                    "label": "LOCK-3"
+                    "key": "LAT3",
+                    "label": "LATCH-3"
                 },
                 "1": {
                     "key": "F11",
                     "label": "F11"
-                },
-                "3": {
-                    "key": "ESCAPE",
-                    "label": "ESC"
                 }
             }
         },
@@ -66,6 +62,10 @@
                 "1": {
                     "key": "F4",
                     "label": "F4"
+                },
+                "2": {
+                    "key": "PAUSE",
+                    "label": "PAUSE"
                 }
             }
         },
@@ -83,6 +83,10 @@
                 "1": {
                     "key": "F3",
                     "label": "F3"
+                },
+                "2": {
+                    "key": "SCROLLLOCK",
+                    "label": "SCLK"
                 }
             }
         },
@@ -100,6 +104,10 @@
                 "1": {
                     "key": "F2",
                     "label": "F2"
+                },
+                "2": {
+                    "key": "PRINTSCREEN",
+                    "label": "PRSC"
                 }
             }
         },
@@ -177,6 +185,14 @@
                 "0": {
                     "key": "R",
                     "label": "R"
+                },
+                "1": {
+                    "key": "CONS:BRIGHTNESSINCREMENT",
+                    "label": "SCRN+"
+                },
+                "2": {
+                    "key": "PAGEUP",
+                    "label": "PGUP"
                 }
             }
         },
@@ -191,9 +207,13 @@
                     "key": "E",
                     "label": "E"
                 },
-                "3": {
-                    "key": "INTER1",
-                    "label": "INTER1"
+                "1": {
+                    "key": "CONS:PAUSEPLAY",
+                    "label": "PL\/PS"
+                },
+                "2": {
+                    "key": "HOME",
+                    "label": "HOME"
                 }
             }
         },
@@ -208,9 +228,13 @@
                     "key": "W",
                     "label": "W"
                 },
-                "3": {
-                    "key": "ISO\/",
-                    "label": "ISO\/"
+                "1": {
+                    "key": "CONS:VOLUMEUP",
+                    "label": "VOL+"
+                },
+                "2": {
+                    "key": "INSERT",
+                    "label": "INS"
                 }
             }
         },
@@ -225,9 +249,9 @@
                     "key": "Q",
                     "label": "Q"
                 },
-                "3": {
-                    "key": "HASH",
-                    "label": "ISO#"
+                "1": {
+                    "key": "CONS:MUTE",
+                    "label": "MUTE"
                 }
             }
         },
@@ -268,9 +292,13 @@
                     "key": "F",
                     "label": "F"
                 },
-                "3": {
-                    "key": "INTER9",
-                    "label": "INTER9"
+                "1": {
+                    "key": "CONS:BRIGHTNESSDECREMENT",
+                    "label": "SCRN-"
+                },
+                "2": {
+                    "key": "PAGEDOWN",
+                    "label": "PGDN"
                 }
             }
         },
@@ -285,9 +313,13 @@
                     "key": "D",
                     "label": "D"
                 },
-                "3": {
-                    "key": "INTER8",
-                    "label": "INTER8"
+                "1": {
+                    "key": "CONS:SCANNEXTTRACK",
+                    "label": "NEXT"
+                },
+                "2": {
+                    "key": "END",
+                    "label": "END"
                 }
             }
         },
@@ -302,9 +334,13 @@
                     "key": "S",
                     "label": "S"
                 },
-                "3": {
-                    "key": "INTER7",
-                    "label": "INTER7"
+                "1": {
+                    "key": "CONS:VOLUMEDOWN",
+                    "label": "VOL-"
+                },
+                "2": {
+                    "key": "DELETE",
+                    "label": "DEL"
                 }
             }
         },
@@ -319,9 +355,9 @@
                     "key": "A",
                     "label": "A"
                 },
-                "3": {
-                    "key": "INTER6",
-                    "label": "INTER6"
+                "1": {
+                    "key": "CONS:SCANPREVIOUSTRACK",
+                    "label": "PREV"
                 }
             }
         },
@@ -400,10 +436,6 @@
                 "0": {
                     "key": "V",
                     "label": "V"
-                },
-                "3": {
-                    "key": "LANG9",
-                    "label": "LANG9"
                 }
             }
         },
@@ -418,9 +450,9 @@
                     "key": "C",
                     "label": "C"
                 },
-                "3": {
-                    "key": "LANG8",
-                    "label": "LANG8"
+                "1": {
+                    "key": "CONS:FILEBROWSER",
+                    "label": "FILES"
                 }
             }
         },
@@ -435,9 +467,9 @@
                     "key": "X",
                     "label": "X"
                 },
-                "3": {
-                    "key": "LANG7",
-                    "label": "LANG7"
+                "1": {
+                    "key": "CONS:FILEBROWSER",
+                    "label": "FILES"
                 }
             }
         },
@@ -452,9 +484,9 @@
                     "key": "Z",
                     "label": "Z"
                 },
-                "3": {
-                    "key": "LANG6",
-                    "label": "LANG6"
+                "1": {
+                    "key": "CONS:CALCULATOR",
+                    "label": "CALC"
                 }
             }
         },
@@ -596,8 +628,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "LCK2",
-                    "label": "LOCK-2"
+                    "key": "LAT2",
+                    "label": "LATCH-2"
                 },
                 "1": {
                     "key": "F12",
@@ -657,10 +689,6 @@
                 "2": {
                     "key": "\/",
                     "label": "\/"
-                },
-                "3": {
-                    "key": "SCROLLLOCK",
-                    "label": "SCLK"
                 }
             }
         },
@@ -682,10 +710,6 @@
                 "2": {
                     "key": "#:'*'",
                     "label": "*"
-                },
-                "3": {
-                    "key": "PAUSE",
-                    "label": "PAUSE"
                 }
             }
         },
@@ -739,8 +763,8 @@
             "h": 6,
             "layers": {
                 "0": {
-                    "key": "MINUS",
-                    "label": "-"
+                    "key": "LAT4",
+                    "label": "LATCH-4"
                 }
             }
         },
@@ -754,6 +778,14 @@
                 "0": {
                     "key": "Y",
                     "label": "Y"
+                },
+                "1": {
+                    "key": "#:'^'",
+                    "label": "^"
+                },
+                "4": {
+                    "key": "#:mouseOut( 0, -1, 0 )",
+                    "label": "\u2190 x1"
                 }
             }
         },
@@ -768,13 +800,17 @@
                     "key": "U",
                     "label": "U"
                 },
+                "1": {
+                    "key": "#:'&'",
+                    "label": "&"
+                },
                 "2": {
                     "key": "7",
                     "label": "7"
                 },
-                "3": {
-                    "key": "INSERT",
-                    "label": "INS"
+                "4": {
+                    "key": "#:mouseOut( 0, 0, 1 )",
+                    "label": "\u2193 x1"
                 }
             }
         },
@@ -789,13 +825,17 @@
                     "key": "I",
                     "label": "I"
                 },
+                "1": {
+                    "key": "#:'*'",
+                    "label": "*"
+                },
                 "2": {
                     "key": "8",
                     "label": "8"
                 },
-                "3": {
-                    "key": "HOME",
-                    "label": "HOME"
+                "4": {
+                    "key": "#:mouseOut( 0, 0, -1 )",
+                    "label": "\u2191 x1"
                 }
             }
         },
@@ -810,13 +850,17 @@
                     "key": "O",
                     "label": "O"
                 },
+                "1": {
+                    "key": "#:'('",
+                    "label": "("
+                },
                 "2": {
                     "key": "9",
                     "label": "9"
                 },
-                "3": {
-                    "key": "PAGEUP",
-                    "label": "PGUP"
+                "4": {
+                    "key": "#:mouseOut( 0, 5, 0 )",
+                    "label": "\u2192 x5"
                 }
             }
         },
@@ -830,6 +874,10 @@
                 "0": {
                     "key": "P",
                     "label": "P"
+                },
+                "1": {
+                    "key": "#:')'",
+                    "label": ")"
                 },
                 "2": {
                     "key": "#:'+'",
@@ -847,6 +895,10 @@
                 "0": {
                     "key": "RBRACE",
                     "label": "]"
+                },
+                "1": {
+                    "key": "-",
+                    "label": "-"
                 }
             }
         },
@@ -860,6 +912,18 @@
                 "0": {
                     "key": "H",
                     "label": "H"
+                },
+                "1": {
+                    "key": "#:'{'",
+                    "label": "{"
+                },
+                "3": {
+                    "key": "LEFT",
+                    "label": "\u2190"
+                },
+                "4": {
+                    "key": "#:mouseOut( 0, -5, 0 )",
+                    "label": "\u2190 x5"
                 }
             }
         },
@@ -874,13 +938,21 @@
                     "key": "J",
                     "label": "J"
                 },
+                "1": {
+                    "key": "[",
+                    "label": "["
+                },
                 "2": {
                     "key": "4",
                     "label": "4"
                 },
                 "3": {
-                    "key": "DELETE",
-                    "label": "DEL"
+                    "key": "DOWN",
+                    "label": "\u2193"
+                },
+                "4": {
+                    "key": "#:mouseOut( 0, 0, 5 )",
+                    "label": "\u2193 x5"
                 }
             }
         },
@@ -895,13 +967,21 @@
                     "key": "K",
                     "label": "K"
                 },
+                "1": {
+                    "key": "]",
+                    "label": "]"
+                },
                 "2": {
                     "key": "5",
                     "label": "5"
                 },
                 "3": {
-                    "key": "END",
-                    "label": "END"
+                    "key": "UP",
+                    "label": "\u2191"
+                },
+                "4": {
+                    "key": "#:mouseOut( 0, 0, -5 )",
+                    "label": "\u2191 x5"
                 }
             }
         },
@@ -916,13 +996,21 @@
                     "key": "L",
                     "label": "L"
                 },
+                "1": {
+                    "key": "#:'}'",
+                    "label": "}"
+                },
                 "2": {
                     "key": "6",
                     "label": "6"
                 },
                 "3": {
-                    "key": "PAGEDOWN",
-                    "label": "PGDN"
+                    "key": "RIGHT",
+                    "label": "\u2192"
+                },
+                "4": {
+                    "key": "#:mouseOut( 0, 5, 0 )",
+                    "label": "\u2192 x5"
                 }
             }
         },
@@ -936,6 +1024,10 @@
                 "0": {
                     "key": "SEMICOLON",
                     "label": ";"
+                },
+                "1": {
+                    "key": "=",
+                    "label": "="
                 },
                 "2": {
                     "key": "#:'+'",
@@ -966,6 +1058,10 @@
                 "0": {
                     "key": "RALT",
                     "label": "RALT"
+                },
+                "4": {
+                    "key": "#:mouseOut( 5, 0, 0 )",
+                    "label": "Btn 5"
                 }
             }
         },
@@ -979,6 +1075,10 @@
                 "0": {
                     "key": "RCTRL",
                     "label": "RCTRL"
+                },
+                "4": {
+                    "key": "#:mouseOut( 6, 0, 0 )",
+                    "label": "Btn 6"
                 }
             }
         },
@@ -1005,6 +1105,10 @@
                 "0": {
                     "key": "N",
                     "label": "N"
+                },
+                "1": {
+                    "key": "#:'~'",
+                    "label": "~"
                 }
             }
         },
@@ -1018,6 +1122,10 @@
                 "0": {
                     "key": "M",
                     "label": "M"
+                },
+                "1": {
+                    "key": "#:'|'",
+                    "label": "|"
                 },
                 "2": {
                     "key": "1",
@@ -1070,6 +1178,10 @@
                     "key": "SLASH",
                     "label": "\/"
                 },
+                "1": {
+                    "key": "\\",
+                    "label": "\\"
+                },
                 "2": {
                     "key": "ENTER",
                     "label": "\u21b5"
@@ -1099,6 +1211,10 @@
                 "0": {
                     "key": "RGUI",
                     "label": "RGUI"
+                },
+                "4": {
+                    "key": "#:mouseOut( 4, 0, 0 )",
+                    "label": "Btn 4"
                 }
             }
         },
@@ -1112,6 +1228,10 @@
                 "0": {
                     "key": "FUN3",
                     "label": "\u01923"
+                },
+                "4": {
+                    "key": "#:mouseOut( 3, 0, 0 )",
+                    "label": "Btn 3"
                 }
             }
         },
@@ -1125,6 +1245,14 @@
                 "0": {
                     "key": "ENTER",
                     "label": "\u21b5"
+                },
+                "2": {
+                    "key": "#:flashMode()",
+                    "label": "FLASH"
+                },
+                "4": {
+                    "key": "#:mouseOut( 1, 0, 0 )",
+                    "label": "Btn 1"
                 }
             }
         },
@@ -1142,6 +1270,10 @@
                 "2": {
                     "key": "P0",
                     "label": "P0"
+                },
+                "4": {
+                    "key": "#:mouseOut( 2, 0, 0 )",
+                    "label": "Btn 2"
                 }
             }
         },

@@ -10,7 +10,7 @@ Generator = "KIICONF 0.2";
 
 
 
-U"ESC" : U"LCK3";
+U"ESC" : U"LAT3";
 U"5" : U"5";
 U"4" : U"4";
 U"3" : U"3";
@@ -48,14 +48,14 @@ U"FUNCTION4" : U"ENTER";
 U"FUNCTION3" : U"BACKSLASH";
 U"BACKTICK" : U"LGUI";
 U"LGUI" : U"LCTRL";
-U"FUNCTION6" : U"LCK2";
+U"FUNCTION6" : U"LAT2";
 U"6" : U"6";
 U"7" : U"7";
 U"8" : U"8";
 U"9" : U"9";
 U"0" : U"0";
 U"MINUS" : U"MINUS";
-U"LBRACE" : U"MINUS";
+U"LBRACE" : U"LAT4";
 U"Y" : U"Y";
 U"U" : U"U";
 U"I" : U"I";

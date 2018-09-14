@@ -1,0 +1,27 @@
+Name = "MDErgo1";
+Variant = "standard";
+Layout = "Default";
+Base = "Blank";
+Version = "0.1";
+Author = "Kasper Honnens de Lichtenberg";
+KLL = "0.3c";
+Date = "2018-09-14";
+Generator = "KIICONF 0.2";
+
+U"Y" : mouseOut( 0, -1, 0 );
+U"U" : mouseOut( 0, 0, 1 );
+U"I" : mouseOut( 0, 0, -1 );
+U"O" : mouseOut( 0, 5, 0 );
+U"H" : mouseOut( 0, -5, 0 );
+U"J" : mouseOut( 0, 0, 5 );
+U"K" : mouseOut( 0, 0, -5 );
+U"L" : mouseOut( 0, 5, 0 );
+U"RALT" : mouseOut( 5, 0, 0 );
+U"RCTRL" : mouseOut( 6, 0, 0 );
+U"PAGEUP" : mouseOut( 4, 0, 0 );
+U"PAGEDOWN" : mouseOut( 3, 0, 0 );
+U"ENTER" : mouseOut( 1, 0, 0 );
+U"SPACE" : mouseOut( 2, 0, 0 );
+
+
+
