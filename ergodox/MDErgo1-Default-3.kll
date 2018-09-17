@@ -9,6 +9,10 @@ Date = "2018-09-14";
 Generator = "KIICONF 0.2";
 
 U"EQUALS" : flashMode();
+U"W" : U"UP";
+U"D" : U"RIGHT";
+U"S" : U"DOWN";
+U"A" : U"LEFT";
 U"MINUS" : flashMode();
 U"H" : U"LEFT";
 U"J" : U"DOWN";

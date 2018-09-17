@@ -22,8 +22,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "LAT3",
-                    "label": "LATCH-3"
+                    "key": "LCK3",
+                    "label": "LOCK-3"
                 },
                 "1": {
                     "key": "F11",
@@ -235,6 +235,10 @@
                 "2": {
                     "key": "INSERT",
                     "label": "INS"
+                },
+                "3": {
+                    "key": "UP",
+                    "label": "\u2191"
                 }
             }
         },
@@ -320,6 +324,10 @@
                 "2": {
                     "key": "END",
                     "label": "END"
+                },
+                "3": {
+                    "key": "RIGHT",
+                    "label": "\u2192"
                 }
             }
         },
@@ -341,6 +349,10 @@
                 "2": {
                     "key": "DELETE",
                     "label": "DEL"
+                },
+                "3": {
+                    "key": "DOWN",
+                    "label": "\u2193"
                 }
             }
         },
@@ -358,6 +370,10 @@
                 "1": {
                     "key": "CONS:SCANPREVIOUSTRACK",
                     "label": "PREV"
+                },
+                "3": {
+                    "key": "LEFT",
+                    "label": "\u2190"
                 }
             }
         },
@@ -384,6 +400,10 @@
                 "0": {
                     "key": "LALT",
                     "label": "LALT"
+                },
+                "1": {
+                    "key": "NEXT LAYER",
+                    "label": "NEXT-\u0192"
                 }
             }
         },
@@ -397,6 +417,10 @@
                 "0": {
                     "key": "LCTRL",
                     "label": "LCTRL"
+                },
+                "1": {
+                    "key": "PREV LAYER",
+                    "label": "PREV-\u0192"
                 }
             }
         },
@@ -628,8 +652,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "LAT2",
-                    "label": "LATCH-2"
+                    "key": "LCK2",
+                    "label": "LOCK-2"
                 },
                 "1": {
                     "key": "F12",
@@ -745,6 +769,10 @@
                     "key": "MINUS",
                     "label": "-"
                 },
+                "1": {
+                    "key": "=",
+                    "label": "="
+                },
                 "2": {
                     "key": "#:flashMode()",
                     "label": "FLASH"
@@ -763,8 +791,8 @@
             "h": 6,
             "layers": {
                 "0": {
-                    "key": "LAT4",
-                    "label": "LATCH-4"
+                    "key": "LCK4",
+                    "label": "LOCK-4"
                 }
             }
         },
@@ -897,8 +925,8 @@
                     "label": "]"
                 },
                 "1": {
-                    "key": "-",
-                    "label": "-"
+                    "key": "[",
+                    "label": "["
                 }
             }
         },
@@ -1025,10 +1053,6 @@
                     "key": "SEMICOLON",
                     "label": ";"
                 },
-                "1": {
-                    "key": "=",
-                    "label": "="
-                },
                 "2": {
                     "key": "#:'+'",
                     "label": "+"
@@ -1059,6 +1083,10 @@
                     "key": "RALT",
                     "label": "RALT"
                 },
+                "1": {
+                    "key": "PREV LAYER",
+                    "label": "PREV-\u0192"
+                },
                 "4": {
                     "key": "#:mouseOut( 5, 0, 0 )",
                     "label": "Btn 5"
@@ -1075,6 +1103,10 @@
                 "0": {
                     "key": "RCTRL",
                     "label": "RCTRL"
+                },
+                "1": {
+                    "key": "NEXT LAYER",
+                    "label": "NEXT-\u0192"
                 },
                 "4": {
                     "key": "#:mouseOut( 6, 0, 0 )",
@@ -1287,6 +1319,10 @@
                 "0": {
                     "key": "LEFT",
                     "label": "\u2190"
+                },
+                "1": {
+                    "key": "RALT",
+                    "label": "RALT"
                 },
                 "2": {
                     "key": "0",

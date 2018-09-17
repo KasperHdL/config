@@ -22,6 +22,8 @@ U"F" : CONS"BRIGHTNESSDECREMENT";
 U"D" : CONS"SCANNEXTTRACK";
 U"S" : CONS"VOLUMEDOWN";
 U"A" : CONS"SCANPREVIOUSTRACK";
+U"LALT" : U"NEXT LAYER";
+U"LCTRL" : U"PREV LAYER";
 U"C" : CONS"FILEBROWSER";
 U"X" : CONS"FILEBROWSER";
 U"Z" : CONS"CALCULATOR";
@@ -31,20 +33,23 @@ U"7" : U"F7";
 U"8" : U"F8";
 U"9" : U"F9";
 U"0" : U"F10";
+U"MINUS" : U"=";
 U"Y" : '^';
 U"U" : '&';
 U"I" : '*';
 U"O" : '(';
 U"P" : ')';
-U"RBRACE" : U"-";
+U"RBRACE" : U"[";
 U"H" : '{';
 U"J" : U"[";
 U"K" : U"]";
 U"L" : '}';
-U"SEMICOLON" : U"=";
+U"RALT" : U"PREV LAYER";
+U"RCTRL" : U"NEXT LAYER";
 U"N" : '~';
 U"M" : '|';
 U"SLASH" : U"\";
+U"LEFT" : U"RALT";
 
 
 
