@@ -231,6 +231,8 @@ exec riot-desktop
 assign [class="(?i)Mailspring*"] 10
 exec mailspring
 
+exec owncloud
+
 bindsym Mod4+l exec i3lock-fancy
 
 exec --no-startup-id sh ~/.config/fehbg
