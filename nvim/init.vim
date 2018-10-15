@@ -10,14 +10,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 
 Plug 'airblade/vim-gitgutter'
-Plug 'mhartington/oceanic-next' "Theme
+"Plug 'mhartington/oceanic-next' "Theme
+Plug 'morhetz/gruvbox', { 'as': 'gruvbox' }
 
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'godlygeek/tabular'
 
@@ -28,6 +31,7 @@ Plug 'derekwyatt/vim-fswitch'
 
 Plug 'tikhomirov/vim-glsl'
 
+Plug 'rhysd/vim-clang-format'
 "Plug 'neomake/neomake'
 "Plug 'vim-syntastic/syntastic'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -93,10 +97,29 @@ set shiftwidth=4
 "============================
 
 syntax enable
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+"let g:oceanic_next_terminal_bold = 1
+"let g:oceanic_next_terminal_italic = 1
+"colorscheme OceanicNext
+"let g:airline_theme='oceanicnext'
+
+set background=dark 
+let g:gruvbox_contrast_dark = 'hard'
+
+let g:gruvbox_italic=1
+colorscheme gruvbox
+
+"============================
+"=====< Clang Format >======
+"============================
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format = 1
+
+"============================
+"=====< Rainbow Parenthesis >======
+"============================
+
+au VimEnter * RainbowParenthesesActivate
+au Syntax * RainbowParenthesesLoadBraces
 
 
 "============================
@@ -135,6 +158,8 @@ let mapleader="\<Space>"
 inoremap jk <ESC>
 map 0 ^
 nnoremap <Leader>w :w<CR>
+
+map <C-p> :FZF<CR>
 
 " Window Management
 map <C-h> <C-w>h		
@@ -192,8 +217,6 @@ vnoremap <Leader><Leader>f :YcmCompleter FixIt<cr>
 "FSHERE
 nnoremap <Leader>t :FSHere<cr>
 nnoremap <Leader><S-t> :FSSplitRight<cr>
-
-
 
 " Zeal
 " Steals focus currently... use with <leader> z
