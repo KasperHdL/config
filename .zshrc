@@ -1,14 +1,15 @@
 # Path to your oh-my-zsh installation.
-#export ZSH=/usr/share/oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 source ~/.zplug/init.zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 
 zplug 'arzzen/calc.plugin.zsh'
 zplug 'rutchkiwi/copyzshell'
 
 zplug 'jimeh/zsh-peco-history'
-zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'paulmelnikow/zsh-startup-timer'
 
 #zplug "plugins/git",   from:oh-my-zsh
@@ -16,7 +17,17 @@ zplug 'paulmelnikow/zsh-startup-timer'
 
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+zplug "b4b4r07/enhancd", use:init.sh
+zplug "b4b4r07/gomi" #safe remove
+#zplug "hlissner/zsh-autopair", defer:2
+#zplug "desyncr/auto-ls"
+zplug "momo-lab/zsh-abbrev-alias"
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:3
+
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -38,6 +49,8 @@ HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
+#AUTO_LS_COMMANDS="exa"
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
@@ -52,18 +65,24 @@ HIST_STAMPS="dd.mm.yyyy"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-#plugins=(git)
+plugins=(git)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
-#source $ZSH/oh-my-zsh.sh
 
 # Set variables
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Aliases
+
+alias cd="cd ~"
+alias ls="exa"
+alias la="ls -la"
+alias l="la"
+
+#
 alias open="nohup xdg-open . &>/dev/null &" #open in new 
 alias vi="nvim"
 alias pacp="~/.config/pacp.sh"
