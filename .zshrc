@@ -50,6 +50,8 @@ alias find="fzf"
 alias cat="bat"
 alias cloc="tokei"
 
+alias mk4="make -j 4"
+
 # Unaliases
 unalias grv
 
