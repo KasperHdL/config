@@ -31,6 +31,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin
 
 source $ZSH/oh-my-zsh.sh
 
+# Set variables
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 # Aliases
 alias open="nohup xdg-open . &>/dev/null &"
