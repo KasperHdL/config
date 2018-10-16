@@ -1,6 +1,27 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/share/oh-my-zsh
 
+source ~/.zplug/init.zsh
+
+#zplug "robbyrussell/oh-my-zsh"
+
+zplug 'arzzen/calc.plugin.zsh'
+zplug 'rutchkiwi/copyzshell'
+zplug 'wting/autojump'
+#zplug 'skylerlee/zeta-zsh-theme', as:theme
+
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# source plugins and add commands to the PATH
+zplug load
+
 ZSH_THEME="default" #symlinked theme
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
@@ -36,7 +57,7 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Aliases
-alias open="nohup xdg-open . &>/dev/null &"
+alias open="nohup xdg-open . &>/dev/null &" #open in new 
 alias vi="nvim"
 alias pacp="~/.config/pacp.sh"
 alias cppcmd="~/.config/cppcmd.sh"
