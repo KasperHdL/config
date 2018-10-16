@@ -9,7 +9,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 
-Plug 'airblade/vim-gitgutter'
 "Plug 'mhartington/oceanic-next' "Theme
 Plug 'morhetz/gruvbox', { 'as': 'gruvbox' }
 
@@ -73,11 +72,16 @@ set encoding=utf8
 "let g:airline_powerline_fonts = 1
 
 
-set relativenumber      " show relative line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu
 set showmatch           " higlight matching parenthesis
+
+"NORMAL = relative numbers, INSERT = absolute numbers
+set number
+set relativenumber
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber 
 
 """"""""""""""""""""
 " => Folding 
@@ -95,17 +99,12 @@ set shiftwidth=4
 "============================
 "=========< Theme >==========
 "============================
-
 syntax enable
-"let g:oceanic_next_terminal_bold = 1
-"let g:oceanic_next_terminal_italic = 1
-"colorscheme OceanicNext
-"let g:airline_theme='oceanicnext'
-
 set background=dark 
-let g:gruvbox_contrast_dark = 'hard'
 
+let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_italic=1
+
 colorscheme gruvbox
 
 "============================
@@ -113,6 +112,9 @@ colorscheme gruvbox
 "============================
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+"let g:clang_format#auto_format_on_insert_leave = 1
+
+let g:clang_format#enable_fallback_style = 0 
 
 "============================
 "=====< Rainbow Parenthesis >======
@@ -172,13 +174,18 @@ nnoremap <Leader>l :bn<cr>
 nnoremap <Leader>h :bp<cr>
 nnoremap <Leader>c :bd<cr>
 
-" Copy & Paste to system clipboard
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 
 " Move a line of text using ALT+[jk] or Cmd+[jk]
 nnoremap <Leader>j mz:m+<cr>`z
