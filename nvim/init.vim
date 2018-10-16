@@ -150,6 +150,8 @@ let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cs'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['unity'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['fbx'] = ''
 
+let g:far#source = 'ag'
+ 
 
 
 "============================
