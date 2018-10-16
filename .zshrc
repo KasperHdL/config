@@ -1,14 +1,20 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/usr/share/oh-my-zsh
+#export ZSH=/usr/share/oh-my-zsh
 
 source ~/.zplug/init.zsh
 
-#zplug "robbyrussell/oh-my-zsh"
 
 zplug 'arzzen/calc.plugin.zsh'
 zplug 'rutchkiwi/copyzshell'
-zplug 'wting/autojump'
-#zplug 'skylerlee/zeta-zsh-theme', as:theme
+
+zplug 'jimeh/zsh-peco-history'
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'paulmelnikow/zsh-startup-timer'
+
+#zplug "plugins/git",   from:oh-my-zsh
+#zplug "plugins/autojump",   from:oh-my-zsh
+
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
@@ -22,7 +28,8 @@ fi
 # source plugins and add commands to the PATH
 zplug load
 
-ZSH_THEME="default" #symlinked theme
+#ZSH_THEME="default" #symlinked theme
+#ZSH_THEME="$ZPLUG_HOME/repos/skylerlee/zeta-zsh-theme/zeta" #symlinked theme
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -45,12 +52,12 @@ HIST_STAMPS="dd.mm.yyyy"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git)
+#plugins=(git)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # Set variables
 export VISUAL=nvim
@@ -74,7 +81,7 @@ alias cloc="tokei"
 alias mk4="make -j 4"
 
 # Unaliases
-unalias grv
+#unalias grv
 
 
 ## Added by Master Password
