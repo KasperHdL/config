@@ -44,6 +44,8 @@ alias sl="sl -a"
 alias t="tree"
 alias files="nohup open . &>/dev/null &"
 alias find="fzf"
+alias cat="bat"
+alias cloc="tokei"
 
 # Unaliases
 unalias grv
